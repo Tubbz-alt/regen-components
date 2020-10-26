@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Regen Network React components",
   "main": "./lib",
-  "files": [
-    "lib"
-  ],
-  "repository": "git@github.com:regen-network/regen-components.git",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/regen-network/regen-components"
+  },
   "author": "blushi <marie.gauthier63@gmail.com>",
   "license": "MIT",
   "scripts": {
@@ -19,7 +19,7 @@
     "lint-fix": "tsc --noEmit && eslint --fix -c .eslintrc.js --max-warnings 0 'src/**/*.ts{,x}'",
     "storybook": "start-storybook -s ./public -p 6006",
     "build-storybook": "build-storybook -s ./public",
-    "prepare": "yarn build"
+    "prepare": "tsc && yarn copy-assets"
   },
   "browserslist": [
     ">0.2%",
