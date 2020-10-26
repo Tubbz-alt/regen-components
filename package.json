@@ -2,7 +2,7 @@
   "name": "regen-components",
   "version": "1.0.0",
   "description": "Regen Network React components",
-  "main": "./lib/index.js",
+  "main": "./lib/",
   "files": ["lib"],
   "repository": {
     "type" : "git",

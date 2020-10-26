@@ -42,7 +42,7 @@ const globalStyles = makeStyles((theme: Theme) => ({
 }));
 
 export const Storybook = ({ children }: Props): JSX.Element => (
-  <ThemeProvider injectFonts injectStyles={globalStyles}>
+  <ThemeProvider injectStyles={globalStyles}>
     {children}
   </ThemeProvider>
 );
