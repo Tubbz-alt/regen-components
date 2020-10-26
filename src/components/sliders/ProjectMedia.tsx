@@ -6,7 +6,7 @@ import PlayIcon from '../icons/PlayIcon';
 export interface Media {
   src: string;
   thumbnail?: string;
-  type?: string;
+  type: string;
   preview?: string;
 }
 
@@ -140,17 +140,6 @@ export default function ProjectMedia({ assets, xsBorderRadius = false }: Project
   }, [handleResize]);
 
   const filteredAssets: Media[] = assets
-    .map(item => {
-      const imageReg = /[\.](gif|jpg|jpeg|tiff|png)/g;
-      const videoReg = /[\.](m4v|avi|mpg|mp4|mov)/g;
-
-      if (imageReg.test(item.src.toLowerCase())) {
-        return { ...item, type: 'image' };
-      } else if (videoReg.test(item.src.toLowerCase())) {
-        return { ...item, type: 'video' };
-      }
-      return item;
-    })
     .filter(item => item.type === 'image' || item.type === 'video');
 
   const thumbnailStyle: object = getThumbnailStyle(thumbnailsTranslate);
