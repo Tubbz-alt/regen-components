@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "Regen Network React components",
   "main": "./lib/",
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/regen-network/regen-components"
+    "type": "git",
+    "url": "https://github.com/regen-network/regen-components"
   },
   "author": "blushi <marie.gauthier63@gmail.com>",
   "license": "MIT",
@@ -45,8 +47,8 @@
     "formik": "^2.2.1",
     "formik-material-ui": "^2.0.0-beta.1",
     "js-cookie": "^2.2.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "react-html-parser": "^2.0.2",
     "react-map-gl": "^5.2.3",
     "react-remove-scroll": "^2.3.0",
